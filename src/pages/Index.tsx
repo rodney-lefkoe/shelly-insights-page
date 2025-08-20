@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Header */}
-      <div className="py-16 bg-muted/30">
+      <div className="py-16 bg-muted/50">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
             Get thoughtful insights to support the changes you're already making
