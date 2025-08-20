@@ -8,10 +8,10 @@ const Index = () => {
       {/* Header */}
       <div className="py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 text-muted-foreground">
             Get thoughtful insights to support the changes you're already making
           </h1>
-          <p className="text-xl md:text-2xl text-foreground">
+          <p className="text-xl md:text-2xl text-muted-foreground">
             Short reads. Big impact. Right when you need them.
           </p>
         </div>
