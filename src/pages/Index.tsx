@@ -6,15 +6,14 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Header */}
-      <div className="bg-gradient-primary py-16">
+      <div className="py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-8">
-            Welcome to Nine Minute Transformations
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
+            Get thoughtful insights to support the changes you're already making
           </h1>
-          <div className="space-y-4 text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-            <p>Get thoughtful insights to support the changes you're already making</p>
-            <p className="text-xl md:text-2xl font-medium">Short reads. Big impact. Right when you need them.</p>
-          </div>
+          <p className="text-xl md:text-2xl text-foreground">
+            Short reads. Big impact. Right when you need them.
+          </p>
         </div>
       </div>
 
