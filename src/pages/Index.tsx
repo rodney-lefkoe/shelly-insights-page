@@ -25,7 +25,7 @@ const Index = () => {
           <p>Each one offers a simple, practical insight about how beliefs shape your thoughts, emotions, and behaviors—and how you can change them.</p>
           <p>They're written by me, Shelly Lefkoe, and designed to support what you're already doing in your sessions.</p>
           <p>No pressure. No overwhelm. Just real tools and thoughtful encouragement, sent straight to your inbox.</p>
-          <p className="font-medium">If you'd like that kind of support, just enter your email below.</p>
+          <p className="font-medium">If you'd like that kind of support, just enter your name and email.</p>
         </div>
 
         {/* Signup Form */}
