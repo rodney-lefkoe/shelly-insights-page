@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nine Minute Transformations - Shelly Lefkoe</title>
@@ -15,10 +15,237 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <style>
+        /* Nine Minute Transformations Design System */
+        :root {
+            --background: hsl(0, 0%, 100%);
+            --foreground: hsl(220, 15%, 15%);
+            --muted: hsl(220, 14%, 96%);
+            --muted-foreground: hsl(220, 9%, 46%);
+            --primary: hsl(339, 82%, 52%);
+            --primary-foreground: hsl(0, 0%, 100%);
+            --accent: hsl(16, 100%, 61%);
+            --border: hsl(220, 13%, 91%);
+            --input: hsl(220, 13%, 91%);
+            --ring: hsl(339, 82%, 52%);
+            --transformation-orange: hsl(16, 100%, 61%);
+            --transformation-pink: hsl(339, 82%, 52%);
+            --gradient-primary: linear-gradient(135deg, hsl(16, 100%, 61%), hsl(339, 82%, 52%));
+            --shadow-soft: 0 4px 20px hsl(339, 82%, 52%, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+        }
+
+        .container {
+            min-height: 100vh;
+        }
+
+        .header {
+            padding: 4rem 0;
+            background-color: hsl(220, 14%, 96%, 0.8);
+        }
+
+        .header-content {
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: var(--foreground);
+        }
+
+        .main-content {
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .content-text {
+            margin-bottom: 3rem;
+        }
+
+        .content-text p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+            color: var(--foreground);
+        }
+
+        .content-text .highlight {
+            font-weight: 500;
+        }
+
+        .signup-form-container {
+            background: linear-gradient(135deg, 
+                hsl(16, 100%, 61%, 0.05), 
+                hsl(339, 82%, 52%, 0.05));
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid hsl(339, 82%, 52%, 0.2);
+        }
+
+        .form-field {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            color: var(--foreground);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--input);
+            background-color: var(--background);
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--ring);
+            box-shadow: 0 0 0 2px hsl(339, 82%, 52%, 0.2);
+        }
+
+        .submit-button {
+            width: 100%;
+            background: var(--gradient-primary);
+            color: var(--primary-foreground);
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-size: 1.125rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .submit-button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 3.75rem;
+            }
+
+            .header p {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <h1>Get thoughtful insights to support the changes you're already making</h1>
+                <p>Short reads. Big impact. Right when you need them.</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-text">
+                <p>You've already taken a big step by signing up for sessions.</p>
+                <p>These blog posts are here to help you keep going.</p>
+                <p>Each one offers a simple, practical insight about how beliefs shape your thoughts, emotions, and behaviors—and how you can change them.</p>
+                <p>They're written by me, Shelly Lefkoe, and designed to support what you're already doing in your sessions.</p>
+                <p>No pressure. No overwhelm. Just real tools and thoughtful encouragement, sent straight to your inbox.</p>
+                <p class="highlight">If you'd like that kind of support, just enter your email below.</p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="signup-form-container">
+                <form 
+                    accept-charset="UTF-8" 
+                    action="https://recreateyourlife.infusionsoft.com/app/form/process/9f5f191460ceafa7ef255e26360b663a" 
+                    class="infusion-form" 
+                    id="inf_form_9f5f191460ceafa7ef255e26360b663a" 
+                    method="POST"
+                >
+                    <input name="inf_form_xid" type="hidden" value="9f5f191460ceafa7ef255e26360b663a" />
+                    <input name="inf_form_name" type="hidden" value="Session Client~br~Subscribe ML Blog" />
+                    <input name="infusionsoft_version" type="hidden" value="1.70.0.844065" />
+                    
+                    <div class="form-field">
+                        <label for="inf_field_FirstName" class="form-label">Name:</label>
+                        <input 
+                            id="inf_field_FirstName" 
+                            name="inf_field_FirstName" 
+                            placeholder="First Name *" 
+                            type="text" 
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="inf_field_Email" class="form-label">Email:</label>
+                        <input 
+                            id="inf_field_Email" 
+                            name="inf_field_Email" 
+                            placeholder="Email *" 
+                            type="email" 
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    
+                    <div class="form-field">
+                        <button 
+                            class="submit-button infusion-recaptcha" 
+                            id="recaptcha_9f5f191460ceafa7ef255e26360b663a" 
+                            type="submit"
+                        >
+                            Sign me up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- External scripts -->
+    <script type="text/javascript" src="https://recreateyourlife.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+    <script type="text/javascript" src="https://recreateyourlife.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.844065-hf-202508141354"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async defer></script>
+    <script type="text/javascript" src="https://recreateyourlife.infusionsoft.com/app/timezone/timezoneInputJs?xid=9f5f191460ceafa7ef255e26360b663a"></script>
+    <script type="text/javascript" src="https://recreateyourlife.infusionsoft.com/js/jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://recreateyourlife.infusionsoft.app/app/webform/overwriteRefererJs"></script>
+</body>
 </html>
