@@ -1,6 +1,2 @@
-// React app disabled - using static HTML instead
-// import { createRoot } from 'react-dom/client'
-// import App from './App.tsx'
-// import './index.css'
-
-// createRoot(document.getElementById("root")!).render(<App />);
+// Static HTML mode - no React needed
+console.log('Static HTML mode active');
